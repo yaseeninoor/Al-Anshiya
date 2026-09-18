@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al'Anshiya Restaurant | Good Food Brighter Mood</title>
+    <title>Al'Anshiya Restaurant | Opening Soon in Pollachi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -107,8 +108,8 @@
         }
 
         .hero-logo {
-            width: 130px;
-            height: 130px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 3px solid var(--gold-primary);
             box-shadow: 0 0 25px rgba(201, 156, 57, 0.35);
@@ -126,12 +127,22 @@
         }
 
         .tagline {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             letter-spacing: 3px;
             color: #e5e7eb;
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .status {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--gold-primary);
             margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .hero p {
@@ -141,26 +152,7 @@
             margin-bottom: 25px;
         }
 
-        .btn-gold {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
-            color: var(--emerald-dark);
-            font-weight: 700;
-            padding: 12px 32px;
-            border-radius: 30px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(201, 156, 57, 0.4);
-        }
-
-        /* Menu Section */
+        /* Section Titles */
         .section-title {
             text-align: center;
             margin: 60px 0 35px;
@@ -180,10 +172,36 @@
             font-weight: 600;
         }
 
-        .menu-container {
+        /* Gallery Section */
+        .gallery-container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid var(--emerald-surface);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+            border-color: var(--gold-primary);
+        }
+
+        /* Menu Section */
+        .menu-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
@@ -197,6 +215,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
             border-top: 4px solid var(--emerald-surface);
             transition: transform 0.2s;
+            text-align: center;
         }
 
         .menu-card:hover {
@@ -204,35 +223,24 @@
             border-top-color: var(--gold-primary);
         }
 
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-        }
-
-        .card-header h3 {
-            font-size: 1.15rem;
+        .menu-card h3 {
+            font-size: 1.25rem;
             color: var(--emerald-dark);
             font-weight: 600;
-        }
-
-        .price {
-            font-weight: 700;
-            color: var(--gold-dark);
-            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-family: 'Cinzel', serif;
         }
 
         .card-desc {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         /* Footer */
         footer {
             background-color: var(--emerald-dark);
             color: #d1d5db;
-            margin-top: 80px;
+            margin-top: 40px;
             border-top: 3px solid var(--gold-primary);
             padding: 50px 20px 25px;
             text-align: center;
@@ -298,6 +306,7 @@
             </a>
             <nav>
                 <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#menu">Menu</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -309,11 +318,24 @@
         <img src="logo.png" alt="Al'Anshiya Emblem" class="hero-logo">
         <h2>AL'ANSHIYA</h2>
         <div class="tagline">Good Food &bull; Brighter Mood</div>
+        <div class="status">Opening Soon</div>
         <p>Authentic non-veg specialties, rich gravies, and aromatic biryanis crafted with traditional spices in Pollachi.</p>
-        <a href="#menu" class="btn-gold">Explore Menu</a>
     </section>
 
-    <!-- Menu Section -->
+    <!-- Gallery Section (Interior Photos) -->
+    <section id="gallery">
+        <div class="section-title">
+            <p>Behind The Scenes</p>
+            <h2>Sneak Peek</h2>
+        </div>
+        <div class="gallery-container">
+            <img src="image_3.png" alt="Restaurant Interior Construction View 1" class="gallery-img">
+            <img src="image_4.png" alt="Restaurant Interior Construction View 2" class="gallery-img">
+            <img src="image_5.png" alt="Restaurant Interior Construction View 3" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Menu Section (No Prices) -->
     <section id="menu">
         <div class="section-title">
             <p>Our Offerings</p>
@@ -322,50 +344,32 @@
 
         <div class="menu-container">
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Classic Chicken Dum Biryani</h3>
-                    <span class="price">₹180</span>
-                </div>
+                <h3>Classic Chicken Dum Biryani</h3>
                 <p class="card-desc">Fragrant seeraga samba rice cooked with succulent chicken and our house-blend spices, served with raita and brinjal dalcha.</p>
             </div>
 
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Special Biryani Family Bucket</h3>
-                    <span class="price">₹750</span>
-                </div>
+                <h3>Special Biryani Family Bucket</h3>
                 <p class="card-desc">Generous group sharing bucket loaded with chicken pieces, boiled eggs, sweet, raita, and full-flavor salna.</p>
             </div>
 
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Special Mutton Nalli Biryani</h3>
-                    <span class="price">₹260</span>
-                </div>
+                <h3>Special Mutton Nalli Biryani</h3>
                 <p class="card-desc">Rich, slow-cooked aromatic biryani featuring tender bone-marrow mutton cuts.</p>
             </div>
 
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Mutton Chukka</h3>
-                    <span class="price">₹220</span>
-                </div>
+                <h3>Mutton Chukka</h3>
                 <p class="card-desc">Tender mutton pieces dry-roasted with native shallots, black pepper, and curry leaves.</p>
             </div>
 
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Pallipalayam Chicken</h3>
-                    <span class="price">₹170</span>
-                </div>
+                <h3>Pallipalayam Chicken</h3>
                 <p class="card-desc">Rustic pan-fried chicken prepared with dry red chilies, crushed garlic, and toasted coconut slivers.</p>
             </div>
 
             <div class="menu-card">
-                <div class="card-header">
-                    <h3>Flaky Parotta with Salna</h3>
-                    <span class="price">₹60</span>
-                </div>
+                <h3>Flaky Parotta with Salna</h3>
                 <p class="card-desc">Freshly crushed multi-layered flatbread served hot with our signature non-veg empty salna.</p>
             </div>
         </div>
@@ -377,7 +381,7 @@
             <h3>AL'ANSHIYA RESTAURANT</h3>
             <p><strong>Location:</strong> Zamin Uthukuli, Pollachi, Tamil Nadu</p>
             <p><strong>Email:</strong> <a href="mailto:alanshiyarestaurant@gmail.com">alanshiyarestaurant@gmail.com</a></p>
-            <p><strong>Orders & Inquiries:</strong> +91‪93849 58394‬</p>
+            <p><strong>Orders & Inquiries:</strong> +91 00000 00000</p>
         </div>
         <div class="copyright">
             &copy; 2026 Al'Anshiya Restaurant. All rights reserved. | alanshiya.in
