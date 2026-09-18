@@ -3,198 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Anshiya Restaurant | Zamin Uthukuli, Pollachi</title>
+    <title>Al'Anshiya Restaurant | Good Food Brighter Mood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        :root {
+            --gold-primary: #c99c39;
+            --gold-light: #eac775;
+            --gold-dark: #9a7322;
+            --emerald-dark: #071e17;
+            --emerald-surface: #0e3025;
+            --cream-bg: #fbf9f5;
+            --text-dark: #1c2421;
+            --text-muted: #5e6963;
+        }
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            color: #333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--text-dark);
             line-height: 1.6;
         }
-        
-        /* Header & Navigation */
+
+        /* Navigation */
         header {
-            background-color: #d84315; /* Warm appetizing orange/red */
-            color: white;
-            padding: 1rem 0;
+            background-color: var(--emerald-dark);
+            border-bottom: 2px solid var(--gold-primary);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
-        
-        .header-container {
-            max-width: 1100px;
+
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0.8rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
         }
 
-        .header-container h1 {
-            margin: 0;
-            font-size: 1.8rem;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 2px solid var(--gold-light);
+            object-fit: cover;
+        }
+
+        .brand-text h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-light);
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        .brand-text span {
+            font-size: 0.65rem;
+            color: #d1d5db;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
         nav a {
-            color: white;
+            color: #f3f4f6;
             text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
+            margin-left: 25px;
+            font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #ffe0b2;
+            color: var(--gold-light);
         }
 
-        /* Hero Section */
+        /* Hero Banner */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80') center/cover;
+            background: linear-gradient(rgba(7, 30, 23, 0.88), rgba(7, 30, 23, 0.92)), 
+                        url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1920&q=80') center/cover;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 90px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid var(--gold-primary);
+            box-shadow: 0 0 25px rgba(201, 156, 57, 0.35);
+            margin-bottom: 20px;
+            background-color: var(--emerald-dark);
+            object-fit: cover;
         }
 
         .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
+            color: var(--gold-light);
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            color: #e5e7eb;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            font-size: 1.2rem;
             max-width: 600px;
-            margin: 0 auto 20px auto;
+            font-size: 1rem;
+            color: #cbd5e1;
+            margin-bottom: 25px;
         }
 
-        .btn {
+        .btn-gold {
             display: inline-block;
-            background-color: #d84315;
-            color: white;
-            padding: 10px 25px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+            color: var(--emerald-dark);
+            font-weight: 700;
+            padding: 12px 32px;
+            border-radius: 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: background 0.3s;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .btn:hover {
-            background-color: #bf360c;
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 156, 57, 0.4);
         }
 
         /* Menu Section */
-        .menu-section {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        .menu-section h2 {
+        .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            color: #d84315;
-            margin-bottom: 30px;
+            margin: 60px 0 35px;
         }
 
-        .menu-grid {
+        .section-title h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            color: var(--emerald-dark);
+        }
+
+        .section-title p {
+            color: var(--gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .menu-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
         }
 
-        .menu-item {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        .menu-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #e7e5e4;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid var(--emerald-surface);
+            transition: transform 0.2s;
         }
 
-        .menu-item-header {
+        .menu-card:hover {
+            transform: translateY(-3px);
+            border-top-color: var(--gold-primary);
+        }
+
+        .card-header {
             display: flex;
             justify-content: space-between;
-            border-bottom: 2px dotted #ccc;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
+            align-items: baseline;
+            margin-bottom: 8px;
         }
 
-        .menu-item-header h3 {
-            margin: 0;
-            color: #333;
+        .card-header h3 {
+            font-size: 1.15rem;
+            color: var(--emerald-dark);
+            font-weight: 600;
         }
 
         .price {
-            font-weight: bold;
-            color: #d84315;
+            font-weight: 700;
+            color: var(--gold-dark);
             font-size: 1.1rem;
         }
 
-        .menu-item p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #666;
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
-        /* Footer & Contact */
+        /* Footer */
         footer {
-            background-color: #212121;
-            color: white;
+            background-color: var(--emerald-dark);
+            color: #d1d5db;
+            margin-top: 80px;
+            border-top: 3px solid var(--gold-primary);
+            padding: 50px 20px 25px;
             text-align: center;
-            padding: 40px 20px 20px;
-            margin-top: 50px;
         }
 
-        .contact-info {
-            margin-bottom: 20px;
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto 30px;
         }
 
-        .contact-info a {
-            color: #ffab91;
+        .footer-content h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-light);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-content p {
+            margin: 6px 0;
+            font-size: 0.95rem;
+        }
+
+        .footer-content a {
+            color: var(--gold-light);
             text-decoration: none;
-        }
-        
-        .contact-info a:hover {
-            text-decoration: underline;
         }
 
         .copyright {
-            font-size: 0.9rem;
-            color: #aaa;
-            border-top: 1px solid #444;
-            padding-top: 15px;
-            margin-top: 20px;
+            border-top: 1px solid #1f3b33;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #9ca3af;
         }
 
-        /* Responsive Design for Mobile */
         @media (max-width: 768px) {
-            .header-container {
+            .nav-container {
                 flex-direction: column;
-                text-align: center;
-            }
-            nav {
-                margin-top: 15px;
+                gap: 12px;
             }
             nav a {
                 margin: 0 10px;
             }
-            .menu-grid {
-                grid-template-columns: 1fr;
-            }
             .hero h2 {
-                font-size: 2.2rem;
+                font-size: 2.1rem;
+            }
+            .tagline {
+                font-size: 0.9rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Navigation -->
     <header>
-        <div class="header-container">
-            <h1>Al Anshiya Restaurant</h1>
+        <div class="nav-container">
+            <a href="#home" class="brand">
+                <img src="logo.png" alt="Al'Anshiya Logo">
+                <div class="brand-text">
+                    <h1>AL'ANSHIYA</h1>
+                    <span>Restaurant</span>
+                </div>
+            </a>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#menu">Menu</a>
@@ -203,68 +304,83 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Banner -->
     <section id="home" class="hero">
-        <h2>Taste the Tradition</h2>
-        <p>Serving authentic, mouth-watering dishes right in the heart of Zamin Uthukuli, Pollachi. Come and experience flavors that feel like home.</p>
-        <a href="#menu" class="btn">View Our Menu</a>
+        <img src="logo.png" alt="Al'Anshiya Emblem" class="hero-logo">
+        <h2>AL'ANSHIYA</h2>
+        <div class="tagline">Good Food &bull; Brighter Mood</div>
+        <p>Authentic non-veg specialties, rich gravies, and aromatic biryanis crafted with traditional spices in Pollachi.</p>
+        <a href="#menu" class="btn-gold">Explore Menu</a>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2>Our Specialties</h2>
-        <div class="menu-grid">
-            
-            <!-- Menu Item 1 -->
-            <div class="menu-item">
-                <div class="menu-item-header">
-                    <h3>Special Chicken Biryani</h3>
+    <section id="menu">
+        <div class="section-title">
+            <p>Our Offerings</p>
+            <h2>Signature Non-Veg Menu</h2>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-card">
+                <div class="card-header">
+                    <h3>Classic Chicken Dum Biryani</h3>
                     <span class="price">₹180</span>
                 </div>
-                <p>Aromatic basmati rice cooked perfectly with tender chicken pieces and our secret blend of traditional spices.</p>
+                <p class="card-desc">Fragrant seeraga samba rice cooked with succulent chicken and our house-blend spices, served with raita and brinjal dalcha.</p>
             </div>
 
-            <!-- Menu Item 2 -->
-            <div class="menu-item">
-                <div class="menu-item-header">
-                    <h3>Family Bucket Meals</h3>
+            <div class="menu-card">
+                <div class="card-header">
+                    <h3>Special Biryani Family Bucket</h3>
                     <span class="price">₹750</span>
                 </div>
-                <p>Perfect for sharing! Includes generous portions of our signature dishes, sides, and refreshing beverages.</p>
+                <p class="card-desc">Generous group sharing bucket loaded with chicken pieces, boiled eggs, sweet, raita, and full-flavor salna.</p>
             </div>
 
-            <!-- Menu Item 3 -->
-            <div class="menu-item">
-                <div class="menu-item-header">
+            <div class="menu-card">
+                <div class="card-header">
+                    <h3>Special Mutton Nalli Biryani</h3>
+                    <span class="price">₹260</span>
+                </div>
+                <p class="card-desc">Rich, slow-cooked aromatic biryani featuring tender bone-marrow mutton cuts.</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="card-header">
                     <h3>Mutton Chukka</h3>
                     <span class="price">₹220</span>
                 </div>
-                <p>Spicy, dry-roasted tender mutton infused with freshly ground pepper and curry leaves.</p>
+                <p class="card-desc">Tender mutton pieces dry-roasted with native shallots, black pepper, and curry leaves.</p>
             </div>
 
-            <!-- Menu Item 4 -->
-            <div class="menu-item">
-                <div class="menu-item-header">
-                    <h3>Parotta & Salna</h3>
+            <div class="menu-card">
+                <div class="card-header">
+                    <h3>Pallipalayam Chicken</h3>
+                    <span class="price">₹170</span>
+                </div>
+                <p class="card-desc">Rustic pan-fried chicken prepared with dry red chilies, crushed garlic, and toasted coconut slivers.</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="card-header">
+                    <h3>Flaky Parotta with Salna</h3>
                     <span class="price">₹60</span>
                 </div>
-                <p>Flaky, multi-layered flatbread served with our rich and flavorful empty salna.</p>
+                <p class="card-desc">Freshly crushed multi-layered flatbread served hot with our signature non-veg empty salna.</p>
             </div>
-
         </div>
     </section>
 
-    <!-- Contact & Footer Section -->
+    <!-- Contact & Location -->
     <footer id="contact">
-        <div class="contact-info">
-            <h3>Visit Al Anshiya Restaurant</h3>
-            <p>📍 Location: Zamin Uthukuli, Pollachi, Tamil Nadu</p>
-            <p>✉️ Email: <a href="mailto:alanshiyarestaurant@gmail.com">alanshiyarestaurant@gmail.com</a></p>
-            <p>📞 Phone: +91 00000 00000 (Update your number here)</p>
+        <div class="footer-content">
+            <h3>AL'ANSHIYA RESTAURANT</h3>
+            <p><strong>Location:</strong> Zamin Uthukuli, Pollachi, Tamil Nadu</p>
+            <p><strong>Email:</strong> <a href="mailto:alanshiyarestaurant@gmail.com">alanshiyarestaurant@gmail.com</a></p>
+            <p><strong>Orders & Inquiries:</strong> +91‪93849 58394‬</p>
         </div>
-        
         <div class="copyright">
-            &copy; 2026 Al Anshiya Restaurant. All rights reserved. Built for Noor Mohammed Ismail.
+            &copy; 2026 Al'Anshiya Restaurant. All rights reserved. | alanshiya.in
         </div>
     </footer>
 
