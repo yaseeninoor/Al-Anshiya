@@ -3,154 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11100d">
-  <meta name="description" content="Discover Al-Anshiya Restaurant in Zamin Uthukuli, Pollachi. Explore our Chinese specials, chicken gravies, grill and tandoori, tikka, rice and noodles.">
-  <title>Al-Anshiya Restaurant | Pollachi</title>
+  <meta name="theme-color" content="#183b2e">
+  <meta name="description" content="Al-Anshiya Restaurant in Zamin Uthukuli, Pollachi. Explore Chinese favourites, chicken gravies, grills, tandoori, tikka, rice and noodles.">
+  <title>Al-Anshiya | A Pollachi Food Story</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Yeseva+One&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#11100d;--panel:#1b1914;--panel2:#242017;--gold:#e5b84f;--gold2:#f6d98e;--cream:#f8f1e4;--muted:#b7ad9a;--line:rgba(229,184,79,.24);--green:#17372b}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:'DM Sans',sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}
-    .topbar{background:#0a0907;border-bottom:1px solid var(--line);color:var(--gold2);text-align:center;padding:8px 14px;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase}
-    header{position:sticky;top:0;z-index:20;background:rgba(17,16,13,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .nav{max-width:1180px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px}.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid var(--gold)}.brand strong{display:block;font:700 1.35rem 'Cormorant Garamond',serif;letter-spacing:.09em;color:var(--gold2)}.brand small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase}
-    nav{display:flex;align-items:center;gap:25px}nav a{font-size:.88rem;color:#e8dfce}nav a:hover{color:var(--gold2)}
-    .nav-cta,.primary-btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#20180a;padding:11px 18px;border-radius:4px;font-weight:700;font-size:.84rem;border:0;display:inline-flex;align-items:center;justify-content:center}
-    .hero{min-height:570px;display:grid;place-items:center;text-align:center;padding:85px 20px;background:linear-gradient(90deg,rgba(10,9,7,.94),rgba(10,9,7,.72),rgba(10,9,7,.92)),url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1800&q=82') center/cover}
-    .hero-inner{max-width:780px}.eyebrow{color:var(--gold2);font-size:.75rem;letter-spacing:.28em;text-transform:uppercase}.hero h1{font:700 clamp(3.3rem,9vw,6.6rem)/.95 'Cormorant Garamond',serif;letter-spacing:.035em;color:var(--gold2);margin:20px 0 8px}.hero h2{font:600 clamp(1.15rem,3vw,1.8rem) 'Cormorant Garamond',serif;letter-spacing:.24em;margin:0 0 18px}.hero p{max-width:590px;margin:0 auto 27px;color:#e2d8c6}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.outline-btn{border:1px solid var(--gold);color:var(--gold2);padding:10px 18px;border-radius:4px;font-size:.84rem;font-weight:600}
-    .hero-note{margin-top:25px;color:var(--muted);font-size:.78rem;letter-spacing:.1em}
-    .section{max-width:1180px;margin:auto;padding:76px 22px}.section-head{text-align:center;margin-bottom:34px}.section-head .eyebrow{font-size:.7rem}.section-head h2{font:700 clamp(2.3rem,5vw,3.5rem)/1.05 'Cormorant Garamond',serif;color:var(--gold2);margin:9px 0}.section-head p{color:var(--muted);margin:0}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-1px}.feature{padding:22px 18px;background:var(--panel);border:1px solid var(--line);text-align:center}.feature b{display:block;color:var(--gold2);font:600 1.25rem 'Cormorant Garamond',serif}.feature span{color:var(--muted);font-size:.8rem}
-    .menu-section{background:linear-gradient(180deg,#17150f,#11100d)}.menu-tools{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:24px}.search{flex:1;min-width:210px;max-width:360px;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:12px 14px;color:var(--cream);outline:none}.search:focus{border-color:var(--gold)}
-    .filters{display:flex;gap:8px;flex-wrap:wrap}.filter{background:transparent;border:1px solid var(--line);color:var(--muted);padding:9px 13px;border-radius:3px;cursor:pointer;font-size:.78rem}.filter.active,.filter:hover{background:var(--gold);border-color:var(--gold);color:#211908}
-    .menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.menu-card{background:var(--panel);border:1px solid rgba(255,255,255,.07);padding:17px 19px;display:flex;justify-content:space-between;gap:15px;align-items:center;transition:border-color .2s,transform .2s}.menu-card:hover{border-color:var(--line);transform:translateY(-2px)}.menu-card h3{font-size:.95rem;margin:0 0 3px;font-weight:600}.menu-card small{color:var(--muted);font-size:.75rem}.price{white-space:nowrap;color:var(--gold2);font-weight:700;font-size:.95rem}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:35px}
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery-grid img{width:100%;height:260px;object-fit:cover;border:1px solid var(--line);border-radius:3px;background:var(--panel)}
-    .visit{background:var(--green);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.visit-inner{max-width:1180px;margin:auto;padding:58px 22px;display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}.visit h2{font:700 2.5rem 'Cormorant Garamond',serif;color:var(--gold2);margin:0}.visit p{margin:5px 0 0;color:#d2d9d0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.contact-actions a{border:1px solid var(--gold);padding:10px 15px;border-radius:3px;color:var(--gold2);font-size:.84rem}
-    footer{padding:30px 22px;text-align:center;color:var(--muted);font-size:.78rem}footer strong{color:var(--gold2);font:600 1.3rem 'Cormorant Garamond',serif;letter-spacing:.12em}.footer-line{height:1px;max-width:1180px;background:var(--line);margin:0 auto 22px}
-    @media(max-width:760px){.nav{padding:10px 15px;flex-wrap:wrap}.brand img{width:42px;height:42px}.brand strong{font-size:1.15rem}nav{order:3;width:100%;justify-content:center;gap:19px;padding:7px 0 2px}nav a{font-size:.8rem}.nav-cta{padding:9px 12px;font-size:.75rem}.hero{min-height:500px;padding:65px 18px}.section{padding:58px 16px}.menu-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img{height:190px}.features{gap:8px}.feature{padding:16px 8px}.feature b{font-size:1.05rem}.feature span{font-size:.7rem}.visit-inner{padding:45px 18px}.visit h2{font-size:2.1rem}}
-    @media(max-width:420px){nav{gap:13px}nav a{font-size:.74rem}.gallery-grid{grid-template-columns:1fr}.gallery-grid img{height:220px}.features{grid-template-columns:1fr}.menu-card{padding:15px}.menu-card h3{font-size:.9rem}}
+    :root{--forest:#183b2e;--forest2:#102b22;--leaf:#78956a;--cream:#f5f0e4;--paper:#fffaf0;--ink:#24352b;--muted:#718071;--orange:#c86b3c;--sun:#e5b85c;--line:#e4dccb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button,input{font:inherit}
+    .announcement{background:var(--forest2);color:#f3d99a;text-align:center;padding:8px 14px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,250,240,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1200px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px}.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--sun)}.brand-name{font:800 1.25rem 'Playfair Display',serif;letter-spacing:.045em;color:var(--forest)}.brand small{display:block;color:var(--muted);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+    nav{display:flex;gap:25px;align-items:center}nav a{font-size:.86rem;font-weight:600;color:var(--forest)}nav a:hover{color:var(--orange)}
+    .nav-order,.btn-primary{background:var(--orange);color:white;padding:11px 17px;border-radius:3px;font-weight:700;font-size:.82rem;display:inline-flex;align-items:center;justify-content:center}
+    .hero{position:relative;overflow:hidden;min-height:640px;background:var(--forest);color:white;display:flex;align-items:center}
+    .hero-photo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,38,28,.96) 0%,rgba(12,38,28,.84) 48%,rgba(12,38,28,.38) 100%),url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1900&q=85') center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,rgba(8,30,22,.52));pointer-events:none}
+    .hero-inner{position:relative;z-index:2;max-width:1200px;width:100%;margin:auto;padding:90px 24px 115px}
+    .place-pill{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(244,218,158,.55);border-radius:99px;padding:7px 13px;color:#f6dfa9;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+    .place-pill i{width:7px;height:7px;border-radius:50%;background:#e9bd68;display:inline-block}
+    .hero h1{font:800 clamp(3.5rem,9vw,7.3rem)/.9 'Playfair Display',serif;letter-spacing:-.045em;color:#fff4d9;margin:27px 0 10px;max-width:760px}
+    .hero h1 span{color:#e7b965;font-style:italic}.hero-kicker{font:1.25rem 'Yeseva One',serif;letter-spacing:.06em;color:#f0d9a7;margin:18px 0 12px}
+    .hero-copy{max-width:570px;color:#e1e7dd;font-size:1rem;margin:0 0 27px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-ghost{border:1px solid rgba(255,255,255,.65);padding:10px 17px;border-radius:3px;color:white;font-size:.82rem;font-weight:700}
+    .landscape{position:absolute;z-index:1;right:3%;bottom:0;width:min(48%,620px);height:220px;opacity:.42;pointer-events:none}
+    .landscape svg{width:100%;height:100%}
+    .hero-stamp{position:absolute;z-index:3;right:8%;top:17%;width:118px;height:118px;border:1px solid rgba(240,210,145,.7);border-radius:50%;display:grid;place-items:center;text-align:center;color:#f4d99e;font:600 .75rem/1.4 'Playfair Display',serif;letter-spacing:.12em;transform:rotate(9deg);background:rgba(18,48,36,.35)}
+    .hero-stamp b{font-size:1.15rem;display:block}
+    .intro-strip{background:#e9e2d2;border-bottom:1px solid #dcd2bd}.intro-inner{max-width:1200px;margin:auto;padding:25px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:center}.intro-item{border-right:1px solid #d2c8b5}.intro-item:last-child{border:0}.intro-item b{display:block;color:var(--forest);font:600 1.12rem 'Playfair Display',serif}.intro-item span{color:#788273;font-size:.76rem}
+    .section{max-width:1200px;margin:auto;padding:82px 24px}.section-heading{text-align:center;margin-bottom:36px}.eyebrow{color:var(--orange);font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}.section-heading h2{font:700 clamp(2.4rem,5vw,3.8rem)/1.1 'Playfair Display',serif;color:var(--forest);margin:10px 0}.section-heading p{color:var(--muted);margin:0}
+    .menu-area{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .menu-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:24px}.search{width:min(100%,330px);background:white;border:1px solid var(--line);padding:12px 14px;border-radius:3px;color:var(--ink);outline:none}.search:focus{border-color:var(--orange)}
+    .filters{display:flex;gap:7px;flex-wrap:wrap}.filter{background:transparent;border:1px solid #d9d1c1;padding:8px 12px;border-radius:99px;color:#687566;font-size:.75rem;cursor:pointer}.filter.active,.filter:hover{background:var(--forest);border-color:var(--forest);color:white}
+    .menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px}.menu-card{padding:16px 3px;border-bottom:1px dashed #d9d1c1;display:flex;justify-content:space-between;align-items:center;gap:15px}.menu-card h3{margin:0;color:#263a2e;font-size:.93rem;font-weight:700}.menu-card small{display:block;color:#929584;font-size:.7rem;margin-top:2px}.price{white-space:nowrap;color:var(--orange);font-weight:700}.empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted)}
+    .story{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.story-art{position:relative;min-height:370px;background:var(--forest);overflow:hidden;border-radius:3px}.story-art img{width:100%;height:370px;object-fit:cover;opacity:.82}.story-label{position:absolute;bottom:18px;left:18px;background:#fff8e9;color:var(--forest);padding:13px 17px;font:600 1.15rem 'Playfair Display',serif}.story-copy h2{font:700 clamp(2.4rem,5vw,3.5rem)/1.08 'Playfair Display',serif;color:var(--forest);margin:10px 0 17px}.story-copy p{color:#667366}.story-note{margin-top:20px;padding-left:15px;border-left:3px solid var(--orange);color:var(--forest);font-weight:600;font-size:.9rem}
+    .gallery-section{background:#e9e2d2}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:13px}.gallery-grid img{width:100%;height:270px;object-fit:cover;border:5px solid var(--paper);box-shadow:0 5px 18px rgba(35,48,35,.08)}.gallery-grid img:first-child{height:310px}
+    .visit{background:var(--forest);color:#fff}.visit-inner{max-width:1200px;margin:auto;padding:62px 24px;display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}.visit h2{font:700 clamp(2.3rem,5vw,3.3rem) 'Playfair Display',serif;color:#f3d99a;margin:7px 0}.visit p{color:#d7e0d5;margin:5px 0}.visit .eyebrow{color:#e8b96a}.visit-actions{display:flex;gap:10px;flex-wrap:wrap}.visit-actions a{border:1px solid #d8b56d;color:#f4dca4;padding:11px 15px;border-radius:3px;font-size:.82rem;font-weight:700}
+    footer{background:#102b22;color:#aab8a9;text-align:center;padding:27px 20px;font-size:.76rem}footer strong{font:700 1.35rem 'Playfair Display',serif;color:#f0d394;letter-spacing:.08em}.footer-rule{height:1px;max-width:1150px;background:rgba(255,255,255,.12);margin:0 auto 22px}
+    @media(max-width:760px){.nav{padding:10px 15px;flex-wrap:wrap}.brand img{width:42px;height:42px}.brand-name{font-size:1.1rem}nav{order:3;width:100%;justify-content:center;gap:18px;padding:7px 0 2px}nav a{font-size:.78rem}.nav-order{font-size:.74rem;padding:9px 12px}.hero{min-height:580px}.hero-inner{padding:78px 20px 110px}.hero-stamp{right:5%;top:7%;width:88px;height:88px;font-size:.58rem}.hero-stamp b{font-size:.9rem}.landscape{width:75%;height:145px;right:-5%}.intro-inner{padding:20px 12px;gap:7px}.intro-item b{font-size:.95rem}.intro-item span{font-size:.65rem}.section{padding:60px 17px}.menu-grid{grid-template-columns:1fr}.story{grid-template-columns:1fr;gap:25px}.story-art,.story-art img{min-height:250px;height:250px}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img,.gallery-grid img:first-child{height:190px}.visit-inner{padding:48px 18px}}
+    @media(max-width:420px){nav{gap:12px}nav a{font-size:.72rem}.intro-item b{font-size:.83rem}.intro-item span{font-size:.6rem}.gallery-grid{grid-template-columns:1fr}.gallery-grid img,.gallery-grid img:first-child{height:220px}.menu-card h3{font-size:.87rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
 <body>
-  <div class="topbar">Good Food · Good Mood · Made with Care</div>
-  <header>
-    <div class="nav">
-      <a class="brand" href="#home"><img src="logo.png" alt="Al-Anshiya logo"><span><strong>AL-ANSHIYA</strong><small>Restaurant · Pollachi</small></span></a>
-      <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Visit Us</a></nav>
-      <a class="nav-cta" href="#menu">Explore Menu</a>
-    </div>
-  </header>
-
+  <div class="announcement">A little taste of Pollachi · Good food, good mood</div>
+  <header><div class="nav">
+    <a class="brand" href="#home"><img src="logo.png" alt="Al-Anshiya restaurant logo"><span><span class="brand-name">AL-ANSHIYA</span><small>Restaurant · Pollachi</small></span></a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#story">Our Place</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav>
+    <a class="nav-order" href="#menu">Explore Menu ↗</a>
+  </div></header>
   <main>
     <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-stamp"><div><b>ஊர்</b>FLAVOUR<br>MEETS<br>HOSPITALITY</div></div>
       <div class="hero-inner">
-        <div class="eyebrow">A taste worth remembering</div>
-        <h1>AL-ANSHIYA</h1>
-        <h2>RESTAURANT</h2>
-        <p>From sizzling Chinese favourites to smoky grills, flavourful gravies and comforting rice dishes — discover good food and a brighter mood.</p>
-        <div class="hero-actions"><a class="primary-btn" href="#menu">View Our Menu</a><a class="outline-btn" href="#contact">Find Our Location</a></div>
-        <div class="hero-note">ZAMIN UTHUKULI · POLLACHI · TAMIL NADU</div>
+        <div class="place-pill"><i></i> Zamin Uthukuli · Pollachi</div>
+        <h1>A flavourful<br><span>Pollachi</span> story.</h1>
+        <div class="hero-kicker">AL-ANSHIYA RESTAURANT</div>
+        <p class="hero-copy">From sizzling Chinese favourites to smoky grills, tandoori and comforting rice dishes — come together over food made to brighten your day.</p>
+        <div class="hero-actions"><a class="btn-primary" href="#menu">Discover the Menu</a><a class="btn-ghost" href="#visit">Find Us in Pollachi</a></div>
       </div>
+      <div class="landscape" aria-hidden="true"><svg viewBox="0 0 700 230" preserveAspectRatio="none"><path d="M0 190 Q90 100 180 165 Q270 35 390 150 Q500 65 700 160 L700 230 L0 230Z" fill="#9eb18b"/><path d="M0 205 Q120 140 240 190 Q370 90 500 180 Q600 120 700 190 L700 230 L0 230Z" fill="#d1c18a"/><g fill="#e5c47e"><path d="M78 200q-9-46 2-72q10 26 5 72m-7-52q-31-26-42-14q27 2 42 20m1-16q23-31 39-23q-22 9-37 29"/><path d="M125 205q-8-42 2-66q10 25 4 66m-6-46q-26-22-37-10q24 2 38 17m0-14q20-26 34-19q-19 8-33 24"/></g></svg></div>
     </section>
 
-    <div class="features" aria-label="Restaurant highlights">
-      <div class="feature"><b>Freshly Prepared</b><span>Made with care and flavour</span></div>
-      <div class="feature"><b>Halal Food</b><span>Halal menu selection</span></div>
-      <div class="feature"><b>Dine In · Take Away</b><span>Enjoy your way</span></div>
-    </div>
+    <div class="intro-strip"><div class="intro-inner">
+      <div class="intro-item"><b>Pollachi Roots</b><span>Proudly located in Zamin Uthukuli</span></div>
+      <div class="intro-item"><b>Halal Menu</b><span>Enjoy our halal food selection</span></div>
+      <div class="intro-item"><b>Your Way</b><span>Dine in · Take away · Delivery</span></div>
+    </div></div>
 
-    <section class="section menu-section" id="menu">
-      <div class="section-head"><div class="eyebrow">Made to satisfy</div><h2>Our Menu</h2><p>Explore our favourites and find your next delicious meal.</p></div>
-      <div class="menu-tools">
-        <input class="search" id="menuSearch" type="search" placeholder="Search dishes..." aria-label="Search menu">
-        <div class="filters" id="filters" aria-label="Menu categories">
-          <button class="filter active" data-category="All">All Items</button>
-          <button class="filter" data-category="Chinese">Chinese</button>
-          <button class="filter" data-category="Chicken Gravy">Chicken Gravy</button>
-          <button class="filter" data-category="Rice & Noodles">Rice & Noodles</button>
-          <button class="filter" data-category="Grill & Tandoori">Grill & Tandoori</button>
-          <button class="filter" data-category="Chicken Tikka">Chicken Tikka</button>
-        </div>
-      </div>
+    <section class="menu-area" id="menu"><div class="section">
+      <div class="section-heading"><div class="eyebrow">Something for every craving</div><h2>From Our Kitchen</h2><p>Browse the menu. Find your favourite. Follow the flavour.</p></div>
+      <div class="menu-toolbar"><input class="search" id="menuSearch" type="search" placeholder="Search for a dish..." aria-label="Search menu"><div class="filters" id="filters">
+        <button class="filter active" data-category="All">All</button><button class="filter" data-category="Chinese">Chinese</button><button class="filter" data-category="Chicken Gravy">Chicken Gravy</button><button class="filter" data-category="Rice & Noodles">Rice & Noodles</button><button class="filter" data-category="Grill & Tandoori">Grill & Tandoori</button><button class="filter" data-category="Chicken Tikka">Chicken Tikka</button>
+      </div></div>
       <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
-    </section>
+    </div></section>
 
-    <section class="section" id="gallery">
-      <div class="section-head"><div class="eyebrow">A glimpse of our place</div><h2>Gallery</h2><p>Take a look at Al-Anshiya.</p></div>
-      <div class="gallery-grid">
-        <img src="image_3.png" alt="Al-Anshiya restaurant gallery photo 1" loading="lazy">
-        <img src="image_4.png" alt="Al-Anshiya restaurant gallery photo 2" loading="lazy">
-        <img src="image_5.png" alt="Al-Anshiya restaurant gallery photo 3" loading="lazy">
-      </div>
-    </section>
+    <section class="section" id="story"><div class="story">
+      <div class="story-art"><img src="image_3.png" alt="A glimpse inside Al-Anshiya Restaurant" loading="lazy"><div class="story-label">A warm welcome awaits.</div></div>
+      <div class="story-copy"><div class="eyebrow">A place to gather</div><h2>Pollachi is our place. Good food is our language.</h2><p>Set in Zamin Uthukuli, Al-Anshiya brings people together over much-loved favourites — from spicy chicken starters and rich gravies to smoky grills, tandoori and rice dishes.</p><p>Whether it is a quick meal, a family outing or a takeaway for home, we look forward to welcoming you.</p><div class="story-note">Good Food · Good Mood · Al-Anshiya</div></div>
+    </div></section>
 
-    <section class="visit" id="contact">
-      <div class="visit-inner">
-        <div><div class="eyebrow">We look forward to welcoming you</div><h2>Visit Al-Anshiya</h2><p>Zamin Uthukuli, Pollachi, Tamil Nadu, India</p><p>For enquiries: <a href="mailto:alanshiyarestaurant@gmail.com">alanshiyarestaurant@gmail.com</a></p></div>
-        <div class="contact-actions"><a href="https://www.google.com/maps/search/?api=1&query=Zamin+Uthukuli+Pollachi+Tamil+Nadu" target="_blank" rel="noopener">Get Directions ↗</a><a href="mailto:alanshiyarestaurant@gmail.com">Email Us ↗</a></div>
-      </div>
-    </section>
+    <section class="gallery-section" id="gallery"><div class="section">
+      <div class="section-heading"><div class="eyebrow">A little look around</div><h2>Our Gallery</h2><p>A glimpse of the Al-Anshiya experience.</p></div>
+      <div class="gallery-grid"><img src="image_3.png" alt="Al-Anshiya restaurant view 1" loading="lazy"><img src="image_4.png" alt="Al-Anshiya restaurant view 2" loading="lazy"><img src="image_5.png" alt="Al-Anshiya restaurant view 3" loading="lazy"></div>
+    </div></section>
+
+    <section class="visit" id="visit"><div class="visit-inner">
+      <div><div class="eyebrow">Come by and say hello</div><h2>See you in Pollachi.</h2><p><strong>Al-Anshiya Restaurant</strong></p><p>Zamin Uthukuli, Pollachi, Tamil Nadu, India</p><p><a href="mailto:alanshiyarestaurant@gmail.com">alanshiyarestaurant@gmail.com</a></p></div>
+      <div class="visit-actions"><a href="https://www.google.com/maps/search/?api=1&query=Al-Anshiya+Restaurant+Zamin+Uthukuli+Pollachi" target="_blank" rel="noopener">Open in Google Maps ↗</a><a href="mailto:alanshiyarestaurant@gmail.com">Email the Restaurant ↗</a></div>
+    </div></section>
   </main>
-
-  <footer><div class="footer-line"></div><strong>AL-ANSHIYA RESTAURANT</strong><p>Good Food · Good Mood</p><p>© <span id="year"></span> Al-Anshiya Restaurant. All rights reserved.</p></footer>
-
+  <footer><div class="footer-rule"></div><strong>AL-ANSHIYA RESTAURANT</strong><p>Good Food · Good Mood</p><p>© <span id="year"></span> Al-Anshiya Restaurant · Zamin Uthukuli, Pollachi</p></footer>
   <script>
-    const menuItems = [
-      {name:"Chicken 65",price:160,category:"Chinese"},
-      {name:"Chicken Manchurian Gravy",price:220,category:"Chinese"},
-      {name:"Chicken Manchurian Dry",price:230,category:"Chinese"},
-      {name:"Chilli Chicken Gravy",price:220,category:"Chinese"},
-      {name:"Chilli Chicken Dry",price:230,category:"Chinese"},
-      {name:"Garlic Chicken",price:230,category:"Chinese"},
-      {name:"Ginger Chicken",price:230,category:"Chinese"},
-      {name:"Dragon Chicken",price:250,category:"Chinese"},
-      {name:"Honey Chicken",price:250,category:"Chinese"},
-      {name:"Lemon Chicken",price:230,category:"Chinese"},
-      {name:"Pepper Chicken Dry",price:240,category:"Chinese"},
-      {name:"Chicken Lollipop (2 Pcs)",price:120,category:"Chinese"},
-      {name:"Chicken Lollipop (4 Pcs)",price:180,category:"Chinese"},
-      {name:"Cheese Chicken Lollipop",price:260,category:"Chinese"},
-      {name:"Chicken Gravy",price:180,category:"Chicken Gravy"},
-      {name:"Tikka Masala",price:220,category:"Chicken Gravy"},
-      {name:"Hyderabadi Chicken",price:240,category:"Chicken Gravy"},
-      {name:"Punjabi Chicken",price:260,category:"Chicken Gravy"},
-      {name:"Chicken Fried Rice",price:180,category:"Rice & Noodles"},
-      {name:"Veg Fried Rice",price:140,category:"Rice & Noodles"},
-      {name:"Mushroom Fried Rice",price:160,category:"Rice & Noodles"},
-      {name:"Schezwan Chicken Rice",price:200,category:"Rice & Noodles"},
-      {name:"Schezwan Veg Rice",price:160,category:"Rice & Noodles"},
-      {name:"Schezwan Mixing Rice",price:180,category:"Rice & Noodles"},
-      {name:"Grill Chicken (Half)",price:250,category:"Grill & Tandoori"},
-      {name:"Grill Chicken (Full)",price:480,category:"Grill & Tandoori"},
-      {name:"Tandoori Chicken (Quarter)",price:150,category:"Grill & Tandoori"},
-      {name:"Tandoori Chicken (Half)",price:250,category:"Grill & Tandoori"},
-      {name:"Tandoori Chicken (Full)",price:540,category:"Grill & Tandoori"},
-      {name:"Chicken Tikka",price:260,category:"Chicken Tikka"},
-      {name:"Malai Tikka",price:280,category:"Chicken Tikka"},
-      {name:"Haryali Tikka (6 Pcs)",price:290,category:"Chicken Tikka"},
-      {name:"Afghani Tikka",price:260,category:"Chicken Tikka"}
+    const menuItems=[
+      {name:"Chicken 65",price:160,category:"Chinese"},{name:"Chicken Manchurian Gravy",price:220,category:"Chinese"},{name:"Chicken Manchurian Dry",price:230,category:"Chinese"},{name:"Chilli Chicken Gravy",price:220,category:"Chinese"},{name:"Chilli Chicken Dry",price:230,category:"Chinese"},{name:"Garlic Chicken",price:230,category:"Chinese"},{name:"Ginger Chicken",price:230,category:"Chinese"},{name:"Dragon Chicken",price:250,category:"Chinese"},{name:"Honey Chicken",price:250,category:"Chinese"},{name:"Lemon Chicken",price:230,category:"Chinese"},{name:"Pepper Chicken Dry",price:240,category:"Chinese"},{name:"Chicken Lollipop (2 Pcs)",price:120,category:"Chinese"},{name:"Chicken Lollipop (4 Pcs)",price:180,category:"Chinese"},{name:"Cheese Chicken Lollipop",price:260,category:"Chinese"},
+      {name:"Chicken Gravy",price:180,category:"Chicken Gravy"},{name:"Tikka Masala",price:220,category:"Chicken Gravy"},{name:"Hyderabadi Chicken",price:240,category:"Chicken Gravy"},{name:"Punjabi Chicken",price:260,category:"Chicken Gravy"},
+      {name:"Chicken Fried Rice",price:180,category:"Rice & Noodles"},{name:"Veg Fried Rice",price:140,category:"Rice & Noodles"},{name:"Mushroom Fried Rice",price:160,category:"Rice & Noodles"},{name:"Schezwan Chicken Rice",price:200,category:"Rice & Noodles"},{name:"Schezwan Veg Rice",price:160,category:"Rice & Noodles"},{name:"Schezwan Mixing Rice",price:180,category:"Rice & Noodles"},
+      {name:"Grill Chicken (Half)",price:250,category:"Grill & Tandoori"},{name:"Grill Chicken (Full)",price:480,category:"Grill & Tandoori"},{name:"Tandoori Chicken (Quarter)",price:150,category:"Grill & Tandoori"},{name:"Tandoori Chicken (Half)",price:250,category:"Grill & Tandoori"},{name:"Tandoori Chicken (Full)",price:540,category:"Grill & Tandoori"},
+      {name:"Chicken Tikka",price:260,category:"Chicken Tikka"},{name:"Malai Tikka",price:280,category:"Chicken Tikka"},{name:"Haryali Tikka (6 Pcs)",price:290,category:"Chicken Tikka"},{name:"Afghani Tikka",price:260,category:"Chicken Tikka"}
     ];
-    let activeCategory = "All";
-    const grid = document.getElementById("menuGrid");
-    const search = document.getElementById("menuSearch");
-    function renderMenu(){
-      const term = search.value.trim().toLowerCase();
-      const filtered = menuItems.filter(item => (activeCategory === "All" || item.category === activeCategory) && item.name.toLowerCase().includes(term));
-      grid.innerHTML = filtered.length ? filtered.map(item => '<article class="menu-card"><div><h3>'+item.name+'</h3><small>'+item.category+'</small></div><div class="price">₹'+item.price+'</div></article>').join("") : '<p class="empty">No dishes found. Try another search.</p>';
-    }
-    document.getElementById("filters").addEventListener("click",event=>{
-      const button=event.target.closest("button[data-category]");
-      if(!button)return;
-      activeCategory=button.dataset.category;
-      document.querySelectorAll(".filter").forEach(el=>el.classList.toggle("active",el===button));
-      renderMenu();
-    });
-    search.addEventListener("input",renderMenu);
-    document.getElementById("year").textContent=new Date().getFullYear();
-    renderMenu();
+    let activeCategory="All";const grid=document.getElementById("menuGrid"),search=document.getElementById("menuSearch");
+    function renderMenu(){const term=search.value.trim().toLowerCase();const list=menuItems.filter(x=>(activeCategory==="All"||x.category===activeCategory)&&x.name.toLowerCase().includes(term));grid.innerHTML=list.length?list.map(x=>'<article class="menu-card"><div><h3>'+x.name+'</h3><small>'+x.category+'</small></div><div class="price">₹'+x.price+'</div></article>').join(""):'<p class="empty">No dishes found. Try another search.</p>';}
+    document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-category]");if(!b)return;activeCategory=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderMenu();});
+    search.addEventListener("input",renderMenu);document.getElementById("year").textContent=new Date().getFullYear();renderMenu();
   </script>
 </body>
 </html>
